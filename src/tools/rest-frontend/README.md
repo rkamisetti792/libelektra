@@ -47,7 +47,12 @@ To stop the `@tool@`, simply run `kdb stop-@tool@` from anywhere.
 This file does not exist by default. It needs to be copied from the template `application-config.json.tpl`.
 To copy the configuration template and mount it into the key database, execute
 the command `kdb mount-rest-frontend-config`. The configuration will then be available below
-`@config_root@/@config_default_profile@`.
+`@config_root@@config_default_profile@`.
+
+#### PID file
+
+Using ${config_root}${config_default_profile}/daemon/lock (i.e., `daemon.lock` in JSON) you can specify which PID file should be used.
+Default: /run/elektra-@tool@.pid
 
 #### APIs (Backend & GitHub)
 
