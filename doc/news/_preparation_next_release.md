@@ -199,6 +199,7 @@ you up to date with the multi-language support provided by Elektra.
 
 ## Tools
 
+- add PID file config setting for kdb-run-rest-frontend *(Markus Raab)*
 - <<TODO>>
 - <<TODO>>
 - <<TODO>>
