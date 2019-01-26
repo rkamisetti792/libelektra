@@ -17,32 +17,32 @@ section here.
 - [Empty Files](empty_files.md)
 - [CMake Plugins](cmake_plugins.md)
 - [Logging](logging.md)
-- [Internal Cache](internal_cache.md)
 - [Elektra Web Structure](elektra_web.md)
 - [Elektra Web Recursive Structure](elektra_web_recursive.md)
 - [Cryptographic Key Handling](cryptograhic_key_handling.md)
+- [Relative Storages](relative.md)
+- [Web API Documentation](api_documentation.md)
+- [Deferred Plugin Calls](deferred_plugin_calls.md)
+- [High Level API](high_level_api.md)
 
 ## Decided
 
-- [Relative Storages](relative.md)
-- [API Documentation](api_documentation.md)
+- [Array](array.md)
 - [Definition of Bool](bool.md)
 - [Plugin Variants](plugin_variants.md)
 
 ## In Discussion
 
-- [CMake spec](cmake_spec.md)
+- [Internal Cache](internal_cache.md)
 - [Global Plugins](global_plugins.md)
+- [Global Validation](global_validation.md)
+- [Default Values](default_values.md)
+- [CMake spec](cmake_spec.md)
 - [Script Testing](script_testing.md)
-- [Array](array.md)
 - [Vendor Spec](vendor_spec.md)
-- [Deferred Plugin Calls](deferred_plugin_calls.md)
 
 ## Drafts
 
 - [Specification](specification.md)
 - [Null Pointer Checks](null_pointer_checks.md)
 - [Publish Subscribe](pubsub.md)
-- [Global Validation](global_validation.md)
-- [Default Values](default_values.md)
-- [High Level API](high_level_api.md)
