@@ -59,7 +59,12 @@ DATE=`date "+%b %d %H:%M"`
 KDB_DEFAULT_STORAGE="@KDB_DEFAULT_STORAGE@"
 KDB_DEFAULT_RESOLVER="@KDB_DEFAULT_RESOLVER@"
 
-KDB_GETENV=`kdb elektrify-getenv getenv KDB 2> /dev/null`
+if [ -z "${KDB}" ]
+then
+	KDB=kdb
+fi
+
+KDB_GETENV=`"$KDB" elektrify-getenv getenv KDB 2> /dev/null`
 
 if [ "${KDB_GETENV}" ]
 then
@@ -141,7 +146,7 @@ check_version()
 {
 	echo "Check if script tests the correct version"
 
-	if [ "x`kdb elektrify-getenv getenv CHECK_VERSION 2> /dev/null`" = "xNO" ]
+	if [ "x`"$KDB" elektrify-getenv getenv CHECK_VERSION 2> /dev/null`" = "xNO" ]
 	then
 		return 0
 	fi
@@ -404,11 +409,6 @@ export_check()
 		check_failed "$EXPORTS" "$TESTNAME" mount
 	fi
 }
-
-
-
-
-
 
 
 
