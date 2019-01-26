@@ -199,6 +199,7 @@ you up to date with the multi-language support provided by Elektra.
 
 ## Tools
 
+- `kdb getenv` now executed correctly from within tests *(Markus Raab)*
 - <<TODO>>
 - <<TODO>>
 - <<TODO>>
