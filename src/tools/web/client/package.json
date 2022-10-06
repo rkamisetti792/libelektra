@@ -13,20 +13,21 @@
   "dependencies": {
     "@bosket/core": "^0.4.2",
     "@bosket/tools": "^0.4.2",
-    "ajv": "^6.4.0",
+    "ajv": "^6.12.3",
     "bosket-react": "^0.4.6",
     "focus-trap-react": "^3.1.2",
     "material-ui": "^0.20.0",
-    "react": "^16.1.1",
+    "react": "^16.5.0",
     "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "^16.1.1",
+    "react-dom": "^16.5.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
+    "react-scripts": "5.0.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-promises": "^1.0.0",
-    "redux-undo-redo-middleware": "^1.2.0"
+    "redux-undo-redo-middleware": "^1.2.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "postinstall": "npm install --prefix ../webd",
@@ -35,10 +36,13 @@
     "server": "cd ../webd && npm run start:prod",
     "start:dev": "concurrently \"react-scripts start\" \"npm run server:dev\"",
     "server:dev": "cd ../webd && npm run start:dev",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
     "webpack": "^3.11.0"
-  }
+  },
+  "snyk": true
 }
