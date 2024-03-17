@@ -51,6 +51,6 @@ RUN kdb global-mount \
     && kdb set -N system /sw/elektra/restfrontend/#0/current/website/url "${URL}" \
     && kdb build-rest-frontend
 
-FROM nginx:alpine
+FROM nginx:1.25.4-alpine3.18
 COPY --from=0 /usr/local/share/elektra/tool_data/rest-frontend/public \
               /usr/share/nginx/html
