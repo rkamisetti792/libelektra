@@ -1,6 +1,6 @@
 # base image for elektra web, all other images build upon this (builds elektra with `yajl` and `kdb`)
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 
 # elektra deps
 RUN apt-get update -y && apt-get install -y cmake git build-essential libyajl-dev curl nodejs-legacy npm
