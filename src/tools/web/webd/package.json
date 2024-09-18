@@ -28,7 +28,7 @@
     "cross-env": "^5.1.1",
     "debug": "^2.6.9",
     "debug-dude": "^1.0.3",
-    "express": "^4.16.2",
+    "express": "^4.20.0",
     "node-fetch": "^1.7.3",
     "uuid": "^3.2.1"
   },
